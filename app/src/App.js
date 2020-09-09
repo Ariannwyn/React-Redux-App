@@ -12,7 +12,11 @@ function App(props) {
   }, [props.loadAPI]);
   return (
     <div className="App">
-      <h1>Some Title</h1>
+      <h1>BATS U.S. Stock Exchanges</h1>
+      <h2>
+        Bats is an equities market operator in the U.S. Here is a selection of
+        stocks and their values
+      </h2>
       <GetAPI stocks={props.state.stocks} />
     </div>
   );

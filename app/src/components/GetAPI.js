@@ -8,11 +8,10 @@ function GetAPI(props) {
       {props.stocks.map((item, index) => {
         return (
           <div className="card" key={index}>
+            <h2>{"Stock Ticker: " + item[1]}</h2>
             <p>{"Date: " + item[0]}</p>
-            <p>{"Ticker: " + item[1]}</p>
             <p>{"Shares Outstanding: " + item[2]}</p>
             <p>{"Net Asset Value: " + item[3]}</p>
-            <p>{"Flow Daily: " + item[4]}</p>
           </div>
         );
       })}
